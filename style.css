@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@100&family=Roboto+Slab&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;  
+}
+
+html{
+    font-size: 90%;
+}
+/*
+body{
+    background-image: url('https://www.teahub.io/photos/full/279-2792224_website-background-design-hd.jpg');
+    background-repeat: no-repeat;
+}
+*/
+.header{
+    position: relative;
+    display: flex;
+    font-size: 3.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 5%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    color: rgb(32, 31, 31);
+}
+
+.header .logo{
+    font-size: 15.5rem;
+    font-weight: bolder;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 120%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: 120%;
+        height: auto;
+    }
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 0.5rem;  
+}
+
+.navbar a{
+    color: rgb(32, 31, 31);
+}
+
+.header .navbar a:hover{
+    text-decoration: underline;
+}
+
+#pages{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 1.5rem;
+    color: rgb(32, 31, 31);
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: rgb(32, 31, 31);
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #efe7e7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(243, 233, 233, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(238, 15, 15);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#btn{
+    background-color: rgb(182, 125, 20);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    margin: 2rem;
+}
+
+#btn:hover{
+    background: #eee;
+    color: rgb(182, 125, 20);
+}
+
+h1{
+    padding: 3rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 1000px;
+}
+
+#btn1{
+    background-color: #57b846;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #000;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+#btn1:hover{
+    background: #eee;
+    color: #57b846;
+}
+
+#btn2{
+    background-color: #57b846;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    margin: 2rem;
+}
+
+#btn2:hover{
+    background: #eee;
+    color: #57b846;
+}
